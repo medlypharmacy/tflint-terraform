@@ -2,8 +2,8 @@ name: "Artifacts"
 description: "Uploads artifacts segregated by app and branch"
 runs:
   using: docker
-  image: docker://ghcr.io/medlypharmacy/tflint-terraform/runner:master
+  image: docker://ghcr.io/medlypharmacy/tflint-terraform/runner:test
 inputs:
-  CONFIG_FILE:  
+  config_file:  
     description: 'tflint config file'
     required: true
